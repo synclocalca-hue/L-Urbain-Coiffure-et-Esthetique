@@ -35,8 +35,8 @@ export default function Page() {
       {/* HEADER */}
       <header className="fixed inset-x-0 top-0 z-40 border-b border-white/10 bg-[#0d0d0d]/85 backdrop-blur-md">
         <div className="mx-auto flex h-24 max-w-7xl items-center justify-between px-6 lg:px-10">
-          <a href="#top" className="flex items-center gap-3" aria-label="Esse Coiffure home">
-            <img src="/logo..jpg" alt="Esse Coiffure logo" className="size-14 border border-white/20 object-cover" />
+          <a href="#top" className="flex items-center gap-3" aria-label="L'Urbain Coiffure home">
+            <img src="/logo..jpg" alt="L'Urbain Coiffure logo" className="size-14 border border-white/20 object-cover" />
           </a>
           <nav className="hidden items-center gap-8 text-[11px] uppercase tracking-[0.2em] text-white/60 md:flex">
             <a className="transition-colors hover:text-white" href="#services">{isFrench ? 'Services' : 'Services'}</a>
@@ -69,10 +69,10 @@ export default function Page() {
         />
         <div className="relative mx-auto w-full max-w-7xl">
           <p className="mb-6 flex items-center gap-3 text-[11px] uppercase tracking-[0.28em] text-[#9bb4c4]">
-            <span className="h-px w-10 bg-[#9bb4c4]" /> Montréal-Nord · Québec
+            <span className="h-px w-10 bg-[#9bb4c4]" /> Montréal · Québec
           </p>
-          <h1 className="max-w-4xl font-serif text-[clamp(4rem,12vw,10rem)] leading-[0.85] tracking-[-0.05em]">
-            Esse<br /><span className="text-white/45">Coiffure</span>
+          <h1 className="max-w-4xl font-serif text-[clamp(3.5rem,10vw,8.5rem)] leading-[0.85] tracking-[-0.05em]">
+            L'Urbain<br /><span className="text-white/45">Coiffure</span>
           </h1>
           <div className="mt-12 flex flex-col items-start gap-5 sm:flex-row sm:items-center">
             <a href="#appointment" className="inline-flex items-center gap-4 bg-[#f4f3f0] px-6 py-4 text-xs font-medium uppercase tracking-[0.18em] text-[#0d0d0d] transition-transform hover:translate-x-1">
@@ -157,7 +157,7 @@ export default function Page() {
         </div>
         <form action="https://api.web3forms.com/submit" method="POST" className="grid gap-5">
           <input type="hidden" name="access_key" value="3ca5e5e1-a73d-4872-89ca-c9e767339e72" />
-          <input type="hidden" name="subject" value="New appointment request — Esse Coiffure" />
+          <input type="hidden" name="subject" value="New appointment request — L'Urbain Coiffure" />
           <label className="grid gap-2 text-[10px] uppercase tracking-[0.2em] text-white/45">
             {isFrench ? 'Nom complet' : 'Full name'}
             <input required name="name" className="border-b border-white/20 bg-transparent px-0 py-3 text-sm text-white outline-none transition focus:border-[#9bb4c4]" />
@@ -202,8 +202,8 @@ export default function Page() {
         <div className="mx-auto grid max-w-7xl gap-12 md:grid-cols-3">
           <div>
             <MapPin className="mb-5 text-[#9bb4c4]" size={20} />
-            <p className="text-sm leading-7 text-white/70">5050 Boulevard Henri-Bourassa E<br />Montréal-Nord, QC H1G 2R9</p>
-            <a href="https://www.google.com/maps/search/?api=1&query=5050+Boulevard+Henri-Bourassa+E+Montreal-Nord" target="_blank" rel="noreferrer" className="mt-5 inline-flex items-center gap-2 text-xs uppercase tracking-[0.15em] text-white hover:text-[#9bb4c4]">
+            <p className="text-sm leading-7 text-white/70">5050 Boulevard Henri-Bourassa E<br />Montréal, QC H1G 2R9</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=5050+Boulevard+Henri-Bourassa+E+Montreal" target="_blank" rel="noreferrer" className="mt-5 inline-flex items-center gap-2 text-xs uppercase tracking-[0.15em] text-white hover:text-[#9bb4c4]">
               {isFrench ? 'Itinéraire' : 'Directions'} <ArrowUpRight size={14} />
             </a>
           </div>
@@ -224,7 +224,7 @@ export default function Page() {
             <div className="flex gap-4 text-white/70">
               {/* Instagram */}
               <a 
-                href="https://www.instagram.com/essecoiffure/" 
+                href="https://www.instagram.com/" 
                 target="_blank" 
                 rel="noreferrer" 
                 aria-label="Instagram"
@@ -239,7 +239,7 @@ export default function Page() {
 
               {/* Facebook */}
               <a 
-                href="https://www.facebook.com/Essecoiffure/" 
+                href="https://www.facebook.com/" 
                 target="_blank" 
                 rel="noreferrer" 
                 aria-label="Facebook"
@@ -256,8 +256,8 @@ export default function Page() {
 
       {/* FOOTER */}
       <footer className="mx-auto flex max-w-7xl justify-between px-6 py-8 text-[10px] uppercase tracking-[0.2em] text-white/35 lg:px-10">
-        <span>© 2026 Esse Coiffure</span>
-        <span>Montréal-Nord, QC</span>
+        <span>© 2026 L'Urbain Coiffure</span>
+        <span>Montréal, QC</span>
       </footer>
 
       {/* FULLSCREEN IMAGE MODAL */}
